@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+        {% if  machine %}
+        <p> Machine: {{machine}} </p>
+        {% endif %}
+
+        {% if  machine %}
+        <p> System: {{system}} </p>
+        {% endif %}
+
+        {% if  PhysicalCores %}
+        <p> PhysicalCores: {{PhysicalCores}} </p>
+        {% endif %}
+
+        {% if  TotalCores %}
+        <p> TotalCores: {{TotalCores}} </p>
+        {% endif %}
+
+        {% if  CpuUsage %}
+        <p> CpuUsage: {{CpuUsage}} </p>
+        {% endif %}
+
+
+
+        <form method="POST">
+            <input type="text" name="system_call"><br>
+            <button type="submit" value="submit"> System Call</button></button>
+        </form>
+
+</body>
+</html>
